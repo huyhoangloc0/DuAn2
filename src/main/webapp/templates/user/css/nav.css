@@ -1,0 +1,54 @@
+.drawer {
+    position: fixed;
+    top: 40px; /* Điều chỉnh giá trị tùy thuộc vào chiều cao của navbar */
+    right: -300px; /* Đẩy ngăn kéo ra ngoài màn hình */
+    width: 300px;
+    height: calc(100% - 30px); /* Chiều cao còn lại của màn hình sau khi loại bỏ navbar */
+    
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Áp dụng transition cho thuộc tính right */
+    z-index: 1000; /* Đảm bảo ngăn kéo hiển thị trên cùng */
+    overflow-y: auto;
+}
+
+
+  .drawer.open {
+    left: 0;
+    margin-top: 45px;
+  }
+
+  .drawer-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .drawer-header h5 {
+    margin-bottom: 0;
+  }
+
+  .drawer-content {
+    padding: 20px;
+  }
+
+  .drawer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .drawer-content ul li {
+    margin-bottom: 10px;
+  }
+
+  .drawer-content ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+  }
+
+  .drawer-content ul li a:hover {
+    color: #007bff;
+  }
+
+  
